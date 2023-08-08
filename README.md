@@ -1,5 +1,5 @@
 # git-lazy-script
-track canges commit chages and pushed to main branch in single command.
+track canges in your project directory then  commit chages and pushed to main branch in a single command.
 
 ## Features
 ```bash
