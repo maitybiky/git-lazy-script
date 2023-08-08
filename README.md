@@ -1,7 +1,7 @@
 # git-lazy-script
 track canges in your project directory then  commit chages and pushed to main branch in a single command.
 
-## Features
+## Command
 ```bash
 gitrun.sh <1st arg>  <2nd arg>
 ```
