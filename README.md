@@ -12,9 +12,6 @@ execute step by step
 - git push -u origin main
 
 
-# Project Title
-
-track changes in your Project directory and commit changes then pushed to main branch in a single command
 
 
 ## Run Locally
