@@ -4,7 +4,7 @@ if [ $# -lt 3 ]; then
 fi
 arg3=$3
 
-
+#cccc
 commit_message="$1"  
 branch_name="$2"
 shift 2
