@@ -1,10 +1,11 @@
-if [ $# -lt 2 ]; then
-  echo "Usage: $0 <commit_message> <file(s)>"
-  exit 1
-fi
+  GNU nano 6.2                        gitrun.sh                                 
+arg3=$3
 
-commit_message="$1"  # First argument is the commit message
-shift  
+
+commit_message="$1"  
+branch_name="$2"
+shift 2
+
 
 # Loop through the remaining arguments and add them
 
@@ -15,5 +16,6 @@ echo -e "\n\033[35m\033[0;42mFiles Changes Tracked!\033[0m"
 git commit -m "$commit_message"
 echo -e "\n\033[35m\033[0;42mChanges Commited!\033[0m"
 
-. gpm.sh
+. gpm.sh "$branch_name"
+
 

@@ -1,8 +1,13 @@
 #!/bin/bash
 
-# Function to display a spinner
+if [ $# -lt 1 ]; then
+  echo "Usage: $0 <branch_name>"
+  exit 1
+fi
+
+
 spinner() {
-  local pid="$1"  # Accept pid as an argument
+  local pid="$1"  
   local delay=0.1
   local spinstr='|/-\'
   while ps -p "$pid" >/dev/null; do
@@ -15,8 +20,8 @@ spinner() {
   printf "    \b\b\b\b"
 }
 
-echo -e "\n\033[0;35mPushing changes... to main\033[0m\n"
-git push -u origin main &
+echo -e "\n\033[0;35mPushing changes... to $branch_name\033[0m\n"
+git push -u origin "$branch_name" &
 
 pid=$!
 
@@ -32,6 +37,7 @@ echo -e "\n\033[35m\033[0;42mChanges Tracked Commited and Pushed!\033[0m"
 else
   echo -e "${RED}Push failed!${NC}"
 fi
+
 
 
 
