@@ -1,4 +1,4 @@
-#!/bin/bash
+#haha
 
 if [ $# -lt 1 ]; then
   echo "Usage: $0 <branch_name>"
