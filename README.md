@@ -3,13 +3,13 @@ track canges in your project directory then  commit chages and pushed to main br
 
 ## Command
 ```bash
-gitrun.sh <1st arg>  <2nd arg>
+gitrun.sh <commit_message> <branch_name>  <files_to_track>
 ```
 
 execute step by step
-- git add  <2nd arg>
-- git commit -m  <1st arg>
-- git push -u origin main
+- git add  <files_to_track>
+- git commit -m  <commit_message>
+- git push -u origin <branch_name>
 
 
 
@@ -47,14 +47,9 @@ make those file executable
 ```bash
   source _gitrun
 ```
-## Command
-
-```bash
-gitrun.sh <commit_message> <filesname for tracking or "." for all files>
-```
 
 ## Demo
 
 ```bash
-gitrun.sh "remove all console.log()" .
+gitrun.sh "remove all console.log() in all files" main .
 ```
