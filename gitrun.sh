@@ -1,4 +1,7 @@
-  GNU nano 6.2                        gitrun.sh                                 
+if [ $# -lt 3 ]; then
+  echo "Usage: gitrun.sh <commit_message> <brach_name> <file(s)>"
+  exit 1
+fi
 arg3=$3
 
 
@@ -17,5 +20,3 @@ git commit -m "$commit_message"
 echo -e "\n\033[35m\033[0;42mChanges Commited!\033[0m"
 
 . gpm.sh "$branch_name"
-
-
