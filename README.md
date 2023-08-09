@@ -42,7 +42,10 @@ Go to the bin directory
 make those file executable
 
 ```bash
-  chmod +x gpm.sh gitrun.sh 
+  sudo chmod +x gpm.sh gitrun.sh 
+```
+```bash
+  source _gitrun
 ```
 ## Command
 
